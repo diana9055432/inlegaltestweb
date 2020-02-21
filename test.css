@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* CSS Document for In-Legal website */
+body { margin:0;
+}  
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 0 10px 0;/* Large padding which will shrink on scroll (using JS) */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  max-width:1300px;
+ 
+  top: 0; /* At the top */
+  z-index: 99;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  opacity:0.97;
+   left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+#navbg{
+    width:100%;
+    text-align: center;
+}
+
+/* Style the navbar links */
+.navlinks {
+  background-color:  #f2f2f2;
+    float:right;
+    width:60%;
+    max-width:500px;
+    height:35px;
+    padding-top:25px;
+    margin-right:40px;
+    margin-left:20px;
+    
+    text-align:justify;
+    display:block;
+    word-spacing:70px;
+    font-size: 18px;
+   
+}
+
+span{
+  background-color:  #f2f2f2;
+  width:100%;
+  height:0.5em;
+  display:inline-block;
+}
+/* Style the logo */
+#navbar, #inlegal, #logo {
+  transition: 0.4s;
+}
+
+#logo {
+float:left;
+height:60px;
+margin:-5px 30px 0 30px; 
+}
+
+#inlegal {
+  font-size: 40px;
+  margin-left:40px;
+  position: absolute;
+  top:15px;
+  letter-spacing: 10px;
+  color: #0066ff;
+}
+
+#inlegal, #navbar, p {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+   color: #0066ff;
+}
+
+a.navlinks:hover {
+   color: #4d4d4d;
+   font-weight: bold;
+}
+
+
+mark { padding-left:0.3em;
+background-color:#ECFFB9 ;}
+
+.overlaytxt, .overlaytxts{
+  color: #fff;
+ line-height: 1.5em;
+ text-align: left;
+ position: absolute;
+ top: 35%;
+ left: 30%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+ opacity:0.9;
+ 
+ font-family: 'Nunito Sans', sans-serif; 
+}
+.overlaytxt{
+ font-size: 40px;
+letter-spacing:10px;max-width:500px;
+}
+
+.overlaytxts {
+   font-size: 20px;
+   letter-spacing:5px;
+   max-width:500px;
+}
+
+.contenthead {
+  position:relative;  text-align: center;
+}
+
+/*tile css imported from my own website */
+
+.tilecontainer {
+	 width: 100%; height: 400px; 
+}
+
+.tile {
+	float: left; margin-right: 50px; 
+}
+
+.endtile{
+	float: left; 
+}
+
+a.mob, a.mobblack {
+	display: none; 
+}
+
+img.resize {
+  width:300px;
+  height:300px;
+}
+
+.overlay, .overlayend, .overlay2, .overlayend2{
+	position:absolute;
+	height: 301px;
+	width: 300px;
+	opacity: 0;
+	transition: .7s ease;
+	background-color:white;
+box-sizing: border-box;
+  border-style: solid;
+  border-width: 4px;
+  border-color:#0066ff;
+}
+
+.overlay, .overlayend {
+  top: 292px;
+}
+
+.overlay2, .overlayend2 {
+  top: 748px;
+   background: linear-gradient(to bottom, transparent, transparent, white );
+}
+
+.overlay, .overlay2 {
+ margin-right: 50px;
+}
+
+
+
+.tile:hover .overlay, .endtile:hover .overlayend{
+  opacity: 1;
+}
+
+.tile:hover .overlay2, .endtile:hover .overlayend2{
+ opacity: 1;
+ 
+}
+.tile:hover .text1, .endtile:hover .text1 {
+ color:#0066ff;
+}
+
+.text1 {
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30px;
+  position:absolute;
+
+  /* top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  */
+  	transition: .7s ease;
+}
+
+
+.text2 ,.text3, .text4{
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  text-align:justify;
+  width:220px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text3 {
+ line-height: 20px;
+ font-size: 20px;
+ text-align:left;
+ top: 75%;
+ left: 50%;
+ width:250px;
+}
+
+.text4{
+ font-size:16px;
+ top: 93%;
+ left: 45%;
+}
